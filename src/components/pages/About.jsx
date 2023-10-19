@@ -1,9 +1,8 @@
-import React from "react";
-
+import React, { useState } from "react";
+import Hero from "../hero";
 function About() {
   return (
     <div>
-      {" "}
       <div>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolores
         assumenda velit inventore enim ex quibusdam cum quos quod ipsum, labore

@@ -4,6 +4,8 @@ import Navbar from "./components/Navbar";
 import About from "./components/pages/About";
 import Services from "./components/pages/Services";
 import Contact from "./components/pages/Contact";
+import Hero from "./components/hero";
+import { useState } from "react";
 function App() {
   return (
     <div className="App">
@@ -13,6 +15,7 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Hero />
     </div>
   );
 }

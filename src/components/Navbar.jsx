@@ -4,15 +4,14 @@ import "../components/Navbar.css";
 function Navbar() {
   return (
     <nav>
-      <Link to="./" className="title">
-        <img
-          width={150}
-          src="https://broadwayinfosys.com/uploads/logo/1667276403.new_broadway_logo.svg"
-          alt=""
-        />
+      <Link className="title">
+        <img width={150} src="logo1.svg" alt="" />
       </Link>
 
       <ul>
+        <li>
+          <Link to="/home">Home</Link>
+        </li>
         <li>
           <Link to="/about">About</Link>
         </li>
