@@ -2,137 +2,116 @@ import React from "react";
 import "./form.css";
 function Contact() {
   return (
-    <div className="form-css">
-      <form action="" class="form_style">
-        <table cellpadding="8">
-          <tr>
-            <th colspan="2" class="head">
-              STUDENT REGISTRATION FORM
-            </th>
-          </tr>
-
-          <tr>
-            <td>Name:</td>
-            <td>
-              <input type="text" placeholder="Raj Kumar Maharjan" />
-            </td>
-          </tr>
-          <tr>
-            <td>Father's Name:</td>
-            <td>
-              <input type="text" />
-            </td>
-          </tr>
-          <tr>
-            <td>Mother's Name:</td>
-            <td>
-              <input type="text" />
-            </td>
-          </tr>
-          <tr>
-            <td>Phone Number:</td>
-            <td>
-              <input type="number" placeholder="281-xxx-xxxx" />
-            </td>
-          </tr>
-          <tr>
-            <td>Email:</td>
-            <td>
-              <input type="text" placeholder="sample@takeo.ai" />
-            </td>
-          </tr>
-          <tr>
-            <td>Gender:</td>
-            <td>
-              <div class="radio_css">
-                <input type="radio" name="gender" /> Male
-                <input type="radio" name="gender" />
-                Female
-                <input type="radio" name="gender" />
-                Others
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>Date of Birth:</td>
-            <td>
-              <div class="dob-css">
-                <input type="text" />-<input type="text" />-
-                <input type="text" class="year_css" />
-                <div>(dd-mm-yyy)</div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>Address:</td>
-            <td>
-              <div class="address_css">
-                <input
-                  type="box"
-                  placeholder="Street:-     House:-    Road:- "
-                />
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>Blood Group:</td>
-            <td>
-              <select name="" id="">
-                <option value="">Select</option>
-                <option value="">O+</option>
-                <option value="">O-</option>
-                <option value="">A+</option>
-                <option value="">A-</option>
+    <>
+      <div class="form_css">
+        <form action="" className="bg-gray-400">
+          <fieldset>
+            <h2 className="  text-[25px] text-green-50 font-semibold m text-center underline bg-gray-600 ">
+              Registration Form
+            </h2>{" "}
+            <br />
+            <label for="uName" className="font-bold">
+              Username:
+            </label>
+            <input
+              type="text"
+              name="uname"
+              id="uName"
+              placeholder="ramey-shyame"
+            />{" "}
+            <hr />
+            <br />
+            <label for="pw" className="font-bold">
+              Password:
+            </label>
+            <input type="password" name="pw" id="pw" placeholder="*******" />{" "}
+            <hr />
+            <br />
+            {/* <!-- label ma for ani input ma id vitra same value define gare paxi
+lable vitra ko content ma click garda input box ma sidhai click hunxa --> */}
+            <label for="fName" className="font-bold">
+              First Name:
+            </label>
+            <input type="text" name="fname" id="fName" placeholder="Raj" />
+            <hr />
+            <br />
+            <label for="lname" className="font-bold">
+              Last Name:
+            </label>
+            <input type="text" name="lname" id="lname" placeholder="Maharjan" />
+            {/* <!-- name attribute vitra ko value rakhda form submit garda kun kun   data
+        jane vanera define gareko --> */}
+            <hr />
+            <br />{" "}
+            <div className="flex gap-12">
+              <label for="age" className="font-bold">
+                Age:{" "}
+              </label>
+              {/* <!-- min max le yati samma ko number matra data base ma pathaune vanera define gareko --> */}
+              <input type="number" name="age" id="age" min="0" max="200" />
+            </div>
+            <hr />
+            <br />
+            <div className="flex justify-left gap-3">
+              <p className="font-bold">Gender:</p>{" "}
+              <input type="radio" name="gender" id="male" />
+              <label for="male">Male</label>
+              <input type="radio" name="gender" id="fmale" />
+              <label for="fmale">Female</label>
+              <input type="radio" name="gender" id="others" />
+              <label for="others">Others</label>
+            </div>
+            <hr />
+            <br />{" "}
+            <div className="flex gap-5">
+              {" "}
+              <p className="font-bold">
+                {" "}
+                Gender with <br />
+                Select Option:
+              </p>
+              <select name="gen" id="">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="others">Others</option>
               </select>
-            </td>
-          </tr>
-          <tr>
-            <td>Department:</td>
-            <td>
-              <div class="radio_css">
-                <input type="radio" name="department" /> CSE
-                <input type="radio" name="department" /> EEE
-                <input type="radio" name="department" /> BBA
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>Course:</td>
-            <td>
-              <div class="course_css">
-                <input type="checkbox" />
-                Frontend <input type="checkbox" />
-                C++
-                <input type="checkbox" />
-                Java <input type="checkbox" />
-                AI
-                <input type="checkbox" />
-                Backend
-                <input type="checkbox" />
-                Robotics
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>Photo:</td>
-            <td>
-              <input type="file" />
-            </td>
-          </tr>
-
-          <tr>
-            <td>
-              <br />
-              <br />{" "}
-              <div className="btn_css">
-                <button>Submit</button>
-                <button>Reset</button>
-              </div>
-            </td>
-          </tr>
-        </table>
-      </form>
-    </div>
+            </div>
+            <hr />
+            <br />{" "}
+            <div className="flex justify-left gap-3">
+              <p className="font-bold">Religion:</p> <input type="checkbox" />{" "}
+              Hindu
+              <input type="checkbox" /> Muslim <input type="checkbox" />{" "}
+              Buddhist
+              <input type="checkbox" /> Christian
+            </div>
+            <hr />
+            <br />
+            <label for="" className="font-bold">
+              Write Message:
+            </label>
+            <br />
+            <textarea
+              className=" bg-red-100 w-full"
+              name="message"
+              id="editor"
+              cols="20"
+              rows="10"
+              placeholder="drop your message here"
+            ></textarea>
+            <br />{" "}
+            <div className="flex justify-center gap-10">
+              <button className="font-bold  border-2 border-solid border-[black] p-1 rounded-[10px]  ">
+                Submit
+              </button>
+              <button className="font-bold  border-2 border-solid border-[black] p-1 rounded-[10px]  ">
+                Reset
+              </button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </>
   );
 }
 

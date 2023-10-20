@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="form.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="form_css">
+      <form action="">
+        <fieldset>
+          <legend>Registration Form</legend>
+          <!-- label ma for ani input ma id vitra same value define gare paxi
+lable vitra ko content ma click garda input box ma sidhai click hunxa -->
+          <label for="fName">First Name:</label>
+          <input type="text" name="fname" id="fName" placeholder="Raj" />
+          <hr />
+          <label for="lname">Last Name:</label>
+          <input type="text" name="lname" id="lname" placeholder="Maharjan" />
+          <!-- name attribute vitra ko value rakhda form submit garda kun kun   data
+        jane vanera define gareko -->
+
+          <hr />
+          <div class="ages">
+            <div>
+              <label for="age">Age: </label>
+            </div>
+            <div>
+              <!-- min max le yati samma ko number matra data base ma pathaune vanera define gareko -->
+              <input type="number" name="age" id="age" min="0" max="200" />
+            </div>
+          </div>
+          <hr />
+          Gender: <input type="radio" name="gender" id="male" />
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="fmale" />
+          <label for="fmale">Female</label>
+          <input type="radio" name="gender" id="others" />
+          <label for="others">Others</label>
+          <hr />
+          Gender with Select Option:
+          <select name="gen" id="">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="others">Others</option>
+          </select>
+          <hr />
+          Religion: <input type="checkbox" /> Hindu
+          <input type="checkbox" /> Muslim <input type="checkbox" /> Buddhist
+          <input type="checkbox" /> Christian
+          <hr />
+          <label for="">Write Message:</label>
+          <br /><br />
+          <textarea
+            name="message"
+            id="editor"
+            cols="20"
+            rows="10"
+            placeholder="drop your message here"
+          ></textarea>
+
+          <hr />
+          <div class="btn_css">
+            <button>Send</button>
+            <button>
+              <a href="formNew.html" target="_blank" class="moreFormFeatures"
+                >Others IMP features In Form</a
+              >
+            </button>
+          </div>
+        </fieldset>
+      </form>
+      <script src="https://cdn.ckeditor.com/ckeditor5/40.0.0/classic/ckeditor.js"></script>
+      <script src="textBox.js"></script>
+    </div>
+  </body>
+</html>

@@ -19,7 +19,7 @@ function Navbar() {
           <Link to="/services">Services</Link>
         </li>
         <li>
-          <Link to="/contact">Student Form</Link>
+          <Link to="/contact">Registration Form</Link>
         </li>
         <div>
           {" "}
