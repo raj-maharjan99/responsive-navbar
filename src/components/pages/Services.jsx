@@ -1,34 +1,35 @@
 import React from "react";
+import "./services.css"; // Import your CSS file for styling
 
 function Services() {
   return (
-    <div>
-      <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolores
-        assumenda velit inventore enim ex quibusdam cum quos quod ipsum, labore
-        voluptatum ad. Possimus qui rem est totam ea! Ratione itaque, reiciendis
-        libero doloremque id doloribus provident sint sapiente obcaecati fugit,
-        cupiditate accusamus voluptatum deleniti laudantium, ipsa tempora iusto
-        modi ullam rerum expedita? Incidunt molestias esse atque saepe accusamus
-        fugit hic velit vitae soluta enim. Officia, odio distinctio. Omnis, quos
-        rem? Enim rem dicta eaque ex totam, laboriosam possimus fuga illo itaque
-        consequuntur repudiandae, iste rerum aliquid ullam pariatur? Id ut
-        architecto aliquid, veniam consectetur doloremque eos dolorum in eius.
-      </div>{" "}
-      <br />
-      <br />
-      <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolores
-        assumenda velit inventore enim ex quibusdam cum quos quod ipsum, labore
-        voluptatum ad. Possimus qui rem est totam ea! Ratione itaque, reiciendis
-        libero doloremque id doloribus provident sint sapiente obcaecati fugit,
-        cupiditate accusamus voluptatum deleniti laudantium, ipsa tempora iusto
-        modi ullam rerum expedita? Incidunt molestias esse atque saepe accusamus
-        fugit hic velit vitae soluta enim. Officia, odio distinctio. Omnis, quos
-        rem? Enim rem dicta eaque ex totam, laboriosam possimus fuga illo itaque
-        consequuntur repudiandae, iste rerum aliquid ullam pariatur? Id ut
-        architecto aliquid, veniam consectetur doloremque eos dolorum in eius.
-      </div>{" "}
+    <div className="nice-page">
+      <section className="hero">
+        <h1 className="text-[25px] font-bold ">
+          Welcome to Our Beautiful Website
+        </h1>
+        <p>Your go-to source for amazing content.</p>
+        <a href="#" className="cta-button">
+          Learn More
+        </a>
+      </section>
+
+      <section className="content">
+        <h2>About Us</h2>
+        <p>
+          We are a creative and innovative team dedicated to providing the best
+          solutions for your needs.
+        </p>
+      </section>
+
+      <section className="  bg-[#3d3d3f] text-center text-[white] px-0 py-[50px]">
+        <h2>Our Services</h2>
+        <ul>
+          <li>Web Design</li>
+          <li>Graphic Design</li>
+          <li>Digital Marketing</li>
+        </ul>
+      </section>
     </div>
   );
 }

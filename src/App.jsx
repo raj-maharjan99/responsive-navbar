@@ -1,21 +1,25 @@
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Footer from "./footer";
 import About from "./components/pages/About";
 import Services from "./components/pages/Services";
 import Contact from "./components/pages/Contact";
+import Youtube from "./components/pages/youtube";
 import Hero from "./components/hero";
-import { useState } from "react";
+
 function App() {
   return (
     <div className="App">
       <Navbar />
       <Routes>
+        <Route path="/" element={<Hero />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/youtube" element={<Youtube />} />
       </Routes>
-      <Hero />
+      <Footer />
     </div>
   );
 }

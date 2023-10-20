@@ -1,0 +1,67 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a background color for the entire page */
+.nice-page {
+  background-color: #eae8e8;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the header and navigation */
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Style the hero section */
+.hero {
+  background-image: url("hero-image.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 100px;
+  color: rgb(21, 3, 3);
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #e84c3d;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* Style the content section */
+.content {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the services section */
+
+/* Style the footer */
+footer {
+  margin-top: 50px;
+  height: 200px;
+  background-color: #222223;
+  color: white;
+  text-align: center;
+  padding: 50px;
+}
