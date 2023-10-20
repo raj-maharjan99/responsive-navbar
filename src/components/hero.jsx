@@ -1,4 +1,5 @@
 import React from "react";
+import PopUpImage from "./popUpImage";
 
 function Hero() {
   return (
@@ -24,6 +25,7 @@ function Hero() {
           </div>
         </div>
       </div>
+      <PopUpImage />
     </>
   );
 }
