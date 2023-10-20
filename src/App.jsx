@@ -7,6 +7,7 @@ import Services from "./components/pages/Services";
 import Contact from "./components/pages/Contact";
 import Youtube from "./components/pages/youtube";
 import Hero from "./components/hero";
+import Gallery from "./components/pages/Gallery";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Hero />} />
         <Route path="/about" element={<About />} />
+        <Route path="/gallery" element={<Gallery />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/youtube" element={<Youtube />} />
