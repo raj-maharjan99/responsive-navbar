@@ -94,19 +94,6 @@ lable vitra ko content ma click garda input box ma sidhai click hunxa --> */}
                 <input type="checkbox" /> Christian
               </div>
               <hr />
-              <br />
-              <label for="" className="font-bold">
-                Write Message:
-              </label>
-              <br />
-              <textarea
-                className=" bg-red-100 w-full"
-                name="message"
-                id="editor"
-                cols="20"
-                rows="10"
-                placeholder="drop your message here"
-              ></textarea>
               <br />{" "}
               <div className="flex justify-center gap-10">
                 <button className="font-bold  border-2 border-solid border-[black] p-1 rounded-[10px]  ">
@@ -117,7 +104,38 @@ lable vitra ko content ma click garda input box ma sidhai click hunxa --> */}
                 </button>
               </div>
             </fieldset>
-          </form>
+          </form>{" "}
+          <br /> <br /> <br /> <br />
+          <div className="bg-gray-200 text-center p-[20px]">
+            <form action="https://www.google.com/search" target="_blank">
+              <fieldset>
+                <legend>
+                  <strong>Google Search</strong>
+                </legend>
+                <input
+                  type="text"
+                  name="q"
+                  placeholder="write here to search"
+                  className="bg-blue-500"
+                />
+                <button>Search</button>
+              </fieldset>
+            </form>{" "}
+            <br />
+            <br />
+            {/* <!-- search garne banaauna laai ? mark agadi ko link rakhne--> */}
+            <form action="https://www.youtube.com/results" target="_blank">
+              <fieldset>
+                <legend>
+                  <strong>YouTube Search</strong>
+                </legend>
+                {/* <!-- input ko name define garda  ? mark paxi = agadi ko j xa tehi rakhne--> */}
+                {/* <!-- example https://www.youtube.com/results?search_query=south+moi --> */}
+                <input type="text" name="search_query" className="bg-red-300" />
+                <button>Search</button>
+              </fieldset>
+            </form>
+          </div>
         </div>
         <div>
           <iframe

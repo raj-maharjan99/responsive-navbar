@@ -1,5 +1,6 @@
 .form_css {
   width: 500px;
+  /* max-height: 820px; */
   border: 2px solid black;
   padding: 20px;
   color: rgb(16, 1, 1);

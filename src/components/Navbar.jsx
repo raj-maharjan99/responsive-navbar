@@ -7,7 +7,11 @@ function Navbar() {
       <Link to="/">
         <img width={120} src="logomens.png" alt="logo" />
       </Link>
-
+      <li>
+        <Link to="/gallery">
+          <img width={80} src="bigsale.png" alt="" />
+        </Link>
+      </li>
       <ul>
         <li>
           <Link to="/">Home</Link>
@@ -15,9 +19,7 @@ function Navbar() {
         <li>
           <Link to="/about">About</Link>
         </li>
-        <li>
-          <Link to="/gallery">Big Sale</Link>
-        </li>
+
         <li>
           <Link to="/services">Services</Link>
         </li>
